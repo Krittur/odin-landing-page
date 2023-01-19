@@ -1,14 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    font-family: "Roboto Condensed", sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header,
+.main {
     background-color: #1f2937;
 }
 
 .header {
+    height: 100px;
     display: flex;
-    flex: 1;
     justify-content: space-around;
     align-items: center;
-    margin-bottom: 50px;
 }
 
 .logo {
@@ -17,32 +26,35 @@ body {
     font-weight: bold;
 }
 
-.links {
-    font-size: 18px;
-    color: #e5e7eb;
-    display: flex;
-    gap: 16px;
-}
 
 ul {
     list-style: none;
-}
-
-.body {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    gap: 18px;
 }
 
-.container {
+ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+.main {
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    height:calc(65vh - 100px);
+}
+
+.hero {
     display: flex;
     flex-wrap: wrap;
     width: 450px;
 }
 
-.hero {
+.hero-title {
     font-size: 48px;
-    font-weight: 900;
+    font-weight: 800;
     color: #f9faf8;
 }
 
@@ -51,6 +63,20 @@ ul {
     color: #e5e7eb;
 }
 
-.sign-up-1 {
+.signup-cta {
+    color: #e5e7eb;
     background-color: #3882f6;
+    font-weight: 800;
+    font-size: 18px;
+    padding: 10px 30px;
+    border-radius: 8px;
+    border: none;
+    margin-top: 10px;
+}
+
+.main-image {
+    display: flex;
+    color: white;
+    background-color: grey;
+    padding: 80px;
 }
