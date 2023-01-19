@@ -27,7 +27,7 @@ body {
 }
 
 
-ul {
+.links {
     list-style: none;
     display: flex;
     gap: 18px;
@@ -79,4 +79,35 @@ ul li a {
     color: white;
     background-color: grey;
     padding: 80px;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.random-info {
+    font-size: 36px;
+    font-weight: 800;
+    color: #1f2937;
+}
+
+.ph-box {
+    display: flex;
+    flex-wrap: wrap;
+    height: 75px;
+    width: 75px;
+    border: 4px solid #3882f6;
+    border-radius: 8px;
+    padding: 75px;
+}
+
+.infobox ul {
+    list-style: none;
+    text-align: center;
+    justify-content: space-evenly;
+    display: flex;
+    gap: 18px;
+    width: 0;
 }
